@@ -5,7 +5,7 @@ public class Present {
 
 public static void main(String[] args)
 {
-    double price;
+    double price ;
     int weiht;
 
     kitkat kitkat1 = new kitkat("KitKat", 19.9, 10,"qwe");
@@ -16,15 +16,15 @@ public static void main(String[] args)
 
 
 
-price = kitkat1.price + chypachyps1.price + chokolad1.price + barbarisk1.price +coffe1.price;
-weiht = kitkat1.weight+chypachyps1.weight+chokolad1.weight+barbarisk1.weight+coffe1.weight;
+price = kitkat1.getPrice() + chypachyps1.getPrice() + chokolad1.getPrice() + barbarisk1.getPrice() +coffe1.getPrice();
+weiht = kitkat1.getWeight()+chypachyps1.getWeight()+chokolad1.getWeight()+barbarisk1.getWeight()+coffe1.getWeight();
 
 
 
 
 System.out.println("цена подарков " + price);
 System.out.println("вес подарков " + weiht);
-System.out.println("подарки" + "\t"+ kitkat1.brand+ "\t" +chypachyps1.brand+ "\t"+chokolad1.brand+ "\t"+barbarisk1.brand+"\t"+coffe1.brand);
+System.out.println("подарки" + "\t"+ kitkat1.getBrand()+ "\t" +chypachyps1.getBrand()+ "\t"+chokolad1.getBrand()+ "\t"+barbarisk1.getBrand()+"\t"+coffe1.getBrand());
 
 }
 }
